@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apramey Kashyap - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #4f8cff 0%, #a770ef 100%);
+      color: #222;
+      min-height: 100vh;
+    }
+    nav {
+      background: rgba(10, 37, 64, 0.95);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #a770ef;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.8);
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      animation: fadeInUp 1s;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    h1, h2, h3 {
+      color: #4f8cff;
+      margin-top: 0;
+    }
+    .hero {
+      text-align: center;
+      background: rgba(255,255,255,0.9);
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      padding: 3rem 1rem 2rem 1rem;
+      animation: fadeInDown 1s;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .contact-links a {
+      color: #0a2540;
+      margin: 0 0.5rem;
+      text-decoration: underline;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background: #4f8cff;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .resume-btn:hover {
+      background: #0a2540;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .contact-form label {
+      font-weight: 500;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 0.5rem;
+      border: 1px solid #cfd8dc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #4f8cff;
+      color: #fff;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .contact-form button:hover {
+      background: #0a2540;
+    }
+    .success, .error {
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .success { color: #2e7d32; }
+    .error { color: #c62828; }
+    @media (max-width: 600px) {
+      nav ul { flex-direction: column; gap: 1rem; }
+      section, .hero { padding: 1.5rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hero" id="home">
+    <h1>Apramey Kashyap</h1>
+    <h2>Machine Learning & AI Enthusiast</h2>
+    <p>Bay Area, CA</p>
+    <div class="contact-links">
+      <a href="mailto:aprameymk@gmail.com">aprameymk@gmail.com</a> |
+      <a href="tel:6692899860">669-289-9860</a> |
+      <a href="https://linkedin.com/aprameymk" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+  </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Machine Learning and AI enthusiast with a strong background in Computer Engineering. Currently pursuing my Master of Science in Engineering and Technology at San Jose State University (GPA: 3.8), I previously earned my Bachelor of Technology in Computer Engineering from Reva University, India (GPA: 3.7).
+    </p>
+    <ul>
+      <li><strong>San Jose State University</strong> — MS in Engineering and Technology, Aug 2023–May 2025</li>
+      <li><strong>Reva University, India</strong> — BTech in Computer Engineering, Aug 2019–Jun 2023</li>
+    </ul>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li><strong>Languages:</strong> Python, CSS, SQL, JavaScript, React</li>
+      <li><strong>Developer Tools:</strong> VS Code, Google Cloud Platform, Android Studio</li>
+      <li><strong>Machine Learning & AI:</strong> TensorFlow, Pytorch, OpenCV, Google Collab</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Problem-Solving</li>
+      <li>Analytical Thinking</li>
+      <li>Collaboration & Teamwork</li>
+      <li>Communication Skills</li>
+      <li>Adaptability & Agility</li>
+    </ul>
+  </section>
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div>
+      <h3>Research Assistant, San Jose State University</h3>
+      <span>Oct 2023 - Mar 2024</span>
+      <ul>
+        <li>Deployed deep learning techniques (Standard and Convolutional Neural Network) for object detection using Keras and TensorFlow.</li>
+        <li>Produced images of objects on film leveraging radiographic techniques, accomplishing monthly targets of Advanced Non-Destructive Testing: employed methods including acoustic emission and infrared testing, obtained 98% accuracy.</li>
+        <li>Built a Retina Net model to identify defects in 0.5mm thick semiconductors with 96% accuracy.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Software Technology Intern, PWC (PricewaterhouseCoopers), India</h3>
+      <span>Sep 2022 – Mar 2023</span>
+      <ul>
+        <li>Conducted needs assessment to identify technology gaps and devised a strategy to reduce complexity and improve performance in technology infrastructure by 40% using Microsoft Azure.</li>
+        <li>Tracked and monitored expenses and construction completion, compared with project plan and reported any variances to project manager, saving 25% of time.</li>
+        <li>Presented analysis to 10 members of leadership team and recommended sales and pricing strategies to increase sales by 25%; compared and analyzed quarterly sales data and pricing.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>Automatic Detection of Potholes and Humps</h3>
+      <span>Reva University, Jan 2023 - July 2023</span>
+      <ul>
+        <li>Developed a prototype system leveraging ultrasonic sensors, RF transmitters/receivers, and a GPS receiver for detection of potholes and humps (75% accuracy).</li>
+        <li>Implemented system with Blynk app, detecting potholes with up to 97% accuracy for humps and potholes.</li>
+        <li>Applied C and C++ programming skills to robotics and computer vision applications and created a simple robot navigation system by operating a Microsoft Kinect sensor.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Chatbot Using Python</h3>
+      <span>Reva University, July 2022 - Dec 2022</span>
+      <ul>
+        <li>Designed and implemented an AI-based chatbot deploying Python and NLP libraries, such as NLTK and spaCy.</li>
+        <li>Enforced hospital management system software with modules on patient management, appointment scheduling and enquiry handling; increased operational efficiency by 52%.</li>
+        <li>Developed systems for automatically analyzing healthcare phone survey recordings using machine learning and natural language processing, enhanced customer satisfaction by 45%.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="leadership">
+    <h2>Leadership & Extracurricular</h2>
+    <h3>Organizing Head, Reva University</h3>
+    <span>Oct 2019 - May 2023</span>
+    <ul>
+      <li>Forum of Reva communication and electronics: Strong, Encouraged, Motivated Leader for 3+ years.</li>
+      <li>Led team of 12 in planning, organizing and executing high profile artist event with over 800 attendees: managed marketing, media publicity, artist relationship management, and event flow (conducted many events like these).</li>
+      <li>Hosted more than 40 events ranging from technical quizzes to different competitions and inter-college fests.</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="https://formspree.io/f/mjkwwalv" method="POST">
+      <label>Name</label>
+      <input type="text" name="name" required>
+      <label>Email</label>
+      <input type="email" name="email" required>
+      <label>Message</label>
+      <textarea name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="form-message"></div>
+    <script>
+      // Optional: Show a message after form submission
+      document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        setTimeout(function() {
+          document.getElementById('form-message').innerHTML = '<div class=\"success\">Thank you! Your message has been sent.</div>';
+        }, 1000);
+      });
+    </script>
+  </section>
+</body>
+</html>
